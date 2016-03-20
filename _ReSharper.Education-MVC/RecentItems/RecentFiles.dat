@@ -1,0 +1,23 @@
+﻿<RecentFiles>
+  <RecentFiles>
+    <File id="56BC7360-6F9F-448F-AA0A-CEA19955C08C/d:Models/f:Login.cs" caret="174" fromTop="7" />
+    <File id="56BC7360-6F9F-448F-AA0A-CEA19955C08C/d:Views/d:Login/f:Dologin.cshtml" caret="381" fromTop="0" />
+    <File id="56BC7360-6F9F-448F-AA0A-CEA19955C08C/d:Controllers/f:UnAuthorizedController.cs" caret="0" fromTop="0" />
+    <File id="56BC7360-6F9F-448F-AA0A-CEA19955C08C/d:Views/d:MainPage/f:Index.cshtml" caret="0" fromTop="0" />
+    <File id="56BC7360-6F9F-448F-AA0A-CEA19955C08C/d:Views/d:Shared/f:_Layout.cshtml" caret="3586" fromTop="10" />
+    <File id="56BC7360-6F9F-448F-AA0A-CEA19955C08C/d:Controllers/f:SuperUserDBController.cs" caret="228" fromTop="10" />
+    <File id="56BC7360-6F9F-448F-AA0A-CEA19955C08C/d:Controllers/f:MergeAndDeleteMainController.cs" caret="850" fromTop="20" />
+    <File id="56BC7360-6F9F-448F-AA0A-CEA19955C08C/d:Controllers/f:LoginController.cs" caret="223" fromTop="9" />
+    <File id="56BC7360-6F9F-448F-AA0A-CEA19955C08C/d:Models/f:MergeAndDeleteMain.cs" caret="365" fromTop="12" />
+    <File id="56BC7360-6F9F-448F-AA0A-CEA19955C08C/d:Views/d:SuperUser/f:MergeAndDeleteMain.cshtml" caret="176" fromTop="10" />
+    <File id="56BC7360-6F9F-448F-AA0A-CEA19955C08C/d:Controllers/f:MergeAndDeleteController.cs" caret="471" fromTop="17" />
+  </RecentFiles>
+  <RecentEdits>
+    <File id="56BC7360-6F9F-448F-AA0A-CEA19955C08C/d:Controllers/f:MergeAndDeleteMainController.cs" caret="950" fromTop="18" />
+    <File id="56BC7360-6F9F-448F-AA0A-CEA19955C08C/d:Models/f:Login.cs" caret="447" fromTop="15" />
+    <File id="56BC7360-6F9F-448F-AA0A-CEA19955C08C/d:Controllers/f:SuperUserDBController.cs" caret="393" fromTop="20" />
+    <File id="56BC7360-6F9F-448F-AA0A-CEA19955C08C/d:Views/d:Shared/f:_Layout.cshtml" caret="993" fromTop="12" />
+    <File id="56BC7360-6F9F-448F-AA0A-CEA19955C08C/d:Views/d:SuperUser/f:MergeAndDeleteMain.cshtml" caret="582" fromTop="29" />
+    <File id="56BC7360-6F9F-448F-AA0A-CEA19955C08C/d:Controllers/f:MergeAndDeleteController.cs" caret="1284" fromTop="17" />
+  </RecentEdits>
+</RecentFiles>

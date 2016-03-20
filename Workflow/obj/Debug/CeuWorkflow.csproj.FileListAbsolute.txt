@@ -1,0 +1,16 @@
+C:\Users\softnology\documents\visual studio 2012\Projects\Ceu-Education-MVC\CeuWorkflow\bin\CeuWorkflow.dll
+C:\Users\softnology\documents\visual studio 2012\Projects\Ceu-Education-MVC\CeuWorkflow\bin\CeuWorkflow.pdb
+C:\Users\softnology\documents\visual studio 2012\Projects\Ceu-Education-MVC\CeuWorkflow\obj\Debug\CeuWorkflow.csprojResolveAssemblyReference.cache
+C:\Users\softnology\documents\visual studio 2012\Projects\Ceu-Education-MVC\CeuWorkflow\obj\Debug\CeuWorkflow.dll
+C:\Users\softnology\documents\visual studio 2012\Projects\Ceu-Education-MVC\CeuWorkflow\obj\Debug\CeuWorkflow.pdb
+C:\Users\softnology\documents\visual studio 2012\Projects\Ceu-Education-MVC\CeuWorkflow\bin\AutoMapper.Net4.dll
+C:\Users\softnology\documents\visual studio 2012\Projects\Ceu-Education-MVC\CeuWorkflow\bin\AutoMapper.dll
+C:\Users\softnology\documents\visual studio 2012\Projects\Ceu-Education-MVC\CeuWorkflow\bin\AutoMapper.xml
+H:\Practice_Projects\Ceu-Education-MVC\CeuWorkflow\bin\AutoMapper.Net4.dll
+H:\Practice_Projects\Ceu-Education-MVC\CeuWorkflow\bin\CeuWorkflow.dll
+H:\Practice_Projects\Ceu-Education-MVC\CeuWorkflow\bin\CeuWorkflow.pdb
+H:\Practice_Projects\Ceu-Education-MVC\CeuWorkflow\bin\AutoMapper.dll
+H:\Practice_Projects\Ceu-Education-MVC\CeuWorkflow\bin\AutoMapper.xml
+H:\Practice_Projects\Ceu-Education-MVC\CeuWorkflow\obj\Debug\CeuWorkflow.csprojResolveAssemblyReference.cache
+H:\Practice_Projects\Ceu-Education-MVC\CeuWorkflow\obj\Debug\CeuWorkflow.dll
+H:\Practice_Projects\Ceu-Education-MVC\CeuWorkflow\obj\Debug\CeuWorkflow.pdb

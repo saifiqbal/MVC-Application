@@ -1,0 +1,87 @@
+﻿@model Ceu_Education_MVC.Models.Login
+
+@{
+    ViewBag.Title = "Dologin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var EnterpriseInfo = (Ceu_Education_MVC.Models.MainPage)ViewBag.OrgInfo;
+}
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.ValidationSummary(true)
+
+           @Html.Partial("_OrganizationInfo",EnterpriseInfo)
+    
+     <div style="margin-left:310px">
+
+        <table style="width:100%;padding-top:20px">
+            
+            <tr >
+                <td style="padding-bottom:20px;padding-top:15px" class="auto-style2"  >
+                 
+                    @Html.TextBoxFor(model => model.Captcha, new {Class="CaptchaClass", style="font-weight:bold;font-size:x-large"})
+                    @Html.ValidationMessageFor(model => model.Captcha, null, new {style="color:red"}) 
+                    
+                </td>
+
+                <td style="width:110px" >
+                    <labeL style="color:white;font-size:large">USERNAME</labeL>
+                </td>
+
+                <td>
+                  @Html.TextBoxFor(model => model.Username, new {Class="LogintextBox",style="font-weight:bold;font-size:x-large" })
+                @Html.ValidationMessageFor(model=>model.Username,null, new {style="color:red"})
+                </td>
+
+
+            </tr>
+
+            <tr>
+                <td class="auto-style2">
+                    @Html.TextBoxFor(model => model.Captcha, new {Class="CaptchaClass",style="font-weight:bold;font-size:x-large" })
+                    @Html.ValidationMessageFor(model=>model.Captcha,null, new {style="color:red"})
+                
+                </td>
+                 <td style="width:110px" >
+                    <label style="color:white; font-size:large">PASSWORD</label>
+                </td>
+
+                <td >
+                    @Html.TextBoxFor(model=>model.Password,new {Class="LogintextBox",style="font-weight:bold;font-size:x-large"})
+                    @Html.ValidationMessageFor(model=>model.Password,null, new {style="color:red"})
+                </td>
+           </tr>
+            <tr>
+                <td class="auto-style2" >
+                    <label style="margin-left:65px; color:white; font-size:smaller">Enter text as shown above</label>
+                </td>
+                <td style="position:absolute; right:100px">
+                   
+                </td>
+                <td >
+                   <button type="submit" style="margin-left:180px; height:30px;width:100px" >LOGIN</button>
+                    
+                </td>
+            </tr>
+            </table>
+    </div>
+
+}
+    <style type="text/css">
+        .auto-style2 {
+            width: 227px;
+        }
+    </style>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+
+
+
+}
+@section OrganizationName{
+    
+    <label style="color:white; font-size:large">@EnterpriseInfo.OrganizationName - Login</label>
+
+}

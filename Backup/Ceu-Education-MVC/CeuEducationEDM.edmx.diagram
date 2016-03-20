@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="74befcb5b2b2461288a5deb8a902980a" Name="Diagram1" ZoomLevel="52">
+        <EntityTypeShape EntityType="CeuModel.aspnet_Applications" Width="1.5" PointX="11.75" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.aspnet_Membership" Width="1.5" PointX="17" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.aspnet_Paths" Width="1.5" PointX="14" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.aspnet_PersonalizationAllUsers" Width="1.5" PointX="16.25" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.aspnet_PersonalizationPerUser" Width="1.5" PointX="16.25" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.aspnet_Profile" Width="1.5" PointX="21.5" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.aspnet_Roles" Width="1.5" PointX="14" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.aspnet_SchemaVersions" Width="1.5" PointX="12.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.aspnet_Users" Width="1.5" PointX="19.25" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.aspnet_WebEvent_Events" Width="1.5" PointX="18.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.PaymentMethod" Width="1.5" PointX="13.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.PaymentReport" Width="1.5" PointX="14.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.sysdiagram" Width="1.5" PointX="16.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_AbondonPassword" Width="1.5" PointX="15.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_AbondonUserNames" Width="1.5" PointX="19.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_AboutUs" Width="1.5" PointX="18.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_AddressType" Width="1.5" PointX="20.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Attendance" Width="1.5" PointX="3" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_CEU_Certificate_Download" Width="1.5" PointX="3" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Cities" Width="1.5" PointX="20.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Conference_Courses" Width="1.5" PointX="6" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Conference_Dates" Width="1.5" PointX="21.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Conference_Facilities" Width="1.5" PointX="7" PointY="30.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Conference_Sponsors" Width="1.5" PointX="9" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Conference_Venue_Types" Width="1.5" PointX="12" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_ConferenceEnrollment" Width="1.5" PointX="9" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Conferences" Width="1.5" PointX="3.75" PointY="25.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Countries" Width="1.5" PointX="16.75" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Course_Attendance" Width="1.5" PointX="21.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Course_Credit_Issuers" Width="1.5" PointX="6" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Course_Effects" Width="1.5" PointX="21.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Course_Enrollment" Width="1.5" PointX="3" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Course_Evaluation_Methods" Width="1.5" PointX="22.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Course_Facilities" Width="1.5" PointX="6" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Course_Focuses" Width="1.5" PointX="11.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Course_Learning_Outcomes" Width="1.5" PointX="16.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Course_Presenters" Width="1.5" PointX="3" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Course_Sponsors" Width="1.5" PointX="9" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Course_Survey" Width="1.5" PointX="6.25" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Course_Topics" Width="1.5" PointX="22.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Course_Venue_Options" Width="1.5" PointX="6" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Courses" Width="1.5" PointX="0.75" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Credential_Phrases" Width="1.5" PointX="18.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Current_User" Width="1.5" PointX="20.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Degree_Types" Width="1.5" PointX="1.5" PointY="51" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Degrees" Width="1.5" PointX="3.75" PointY="50.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_District_Sites" Width="1.5" PointX="13" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Districts" Width="1.5" PointX="10.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Ecommerce_Transactions" Width="1.5" PointX="22.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Enrollment_Master" Width="1.5" PointX="0.75" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Event_Facilities" Width="1.5" PointX="3.75" PointY="36" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Facilities" Width="1.5" PointX="1.5" PointY="36" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Fee_Details" Width="1.5" PointX="12" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Fee_Master" Width="1.5" PointX="6.75" PointY="24" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Fee_Types" Width="1.5" PointX="9.75" PointY="31.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Issuers" Width="1.5" PointX="3.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_License_Levels" Width="1.5" PointX="1.5" PointY="47.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Licenses" Width="1.5" PointX="3.75" PointY="47.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Licensing" Width="1.5" PointX="3" PointY="43.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_OnlineCourses" Width="1.5" PointX="23.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_org_regulation" Width="1.5" PointX="21" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Organization_Professions" Width="1.5" PointX="23.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Organizations" Width="1.5" PointX="1.5" PointY="25.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Person" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Person_2" Width="1.5" PointX="23.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Person_Degrees" Width="1.5" PointX="6" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Person_Licenses" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Person_Organization_Roles" Width="1.5" PointX="9.75" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_PersonOrganizationMemberships" Width="1.5" PointX="23.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Persons_Professions" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Presenters" Width="1.5" PointX="0.75" PointY="39.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Profession_Degrees" Width="1.5" PointX="24.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_professions" Width="1.5" PointX="0.75" PointY="41.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Providers" Width="1.5" PointX="3.75" PointY="33" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Questions" Width="1.5" PointX="4" PointY="39.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_QuestionScale" Width="1.5" PointX="6.25" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Regulators" Width="1.5" PointX="18.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Role_Types" Width="1.5" PointX="5.25" PointY="43.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Roles" Width="1.5" PointX="7.5" PointY="43.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_School" Width="1.5" PointX="13.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Secret_Questions" Width="1.5" PointX="24.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Sex" Width="1.5" PointX="24.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Sites" Width="1.5" PointX="10.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_SPARQi_Products" Width="1.5" PointX="22.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_States" Width="1.5" PointX="19" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Suffixes" Width="1.5" PointX="24.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Survey" Width="1.5" PointX="4" PointY="30" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Survey_Questions" Width="1.5" PointX="6.25" PointY="39.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Survey_Results" Width="1.5" PointX="8.5" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Upload_Files" Width="1.5" PointX="25.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_Venue_Types" Width="1.5" PointX="3.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.tbl_WhatsNew" Width="1.5" PointX="25.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.VideosHistory" Width="1.5" PointX="25.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.vw_aspnet_Applications" Width="1.5" PointX="25.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.vw_aspnet_MembershipUsers" Width="1.5" PointX="15.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.vw_aspnet_Profiles" Width="1.5" PointX="17.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.vw_aspnet_Roles" Width="1.5" PointX="19.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.vw_aspnet_Users" Width="1.5" PointX="26.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.vw_aspnet_UsersInRoles" Width="1.5" PointX="26.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.vw_aspnet_WebPartState_Paths" Width="1.5" PointX="26.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.vw_aspnet_WebPartState_Shared" Width="1.5" PointX="26.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CeuModel.vw_aspnet_WebPartState_User" Width="1.5" PointX="24.75" PointY="31.75" IsExpanded="true" />
+        <AssociationConnector Association="CeuModel.FK__aspnet_Me__Appli__7F2BE32F" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK__aspnet_Pa__Appli__3864608B" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK__aspnet_Ro__Appli__2180FB33" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK__aspnet_Us__Appli__6B24EA82" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK__aspnet_Me__UserI__00200768" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK__aspnet_Pe__PathI__40058253" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK__aspnet_Pe__PathI__45BE5BA9" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK__aspnet_Pe__UserI__46B27FE2" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK__aspnet_Pr__UserI__160F4887" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Attendance_tbl_Enrollment_Master" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Course_Survey_tbl_Attendance" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_CEU_Certificate_Download_tbl_CEU_Certificate_Download" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_CEU_Certificate_Download_tbl_Courses" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Conference_Courses_tbl_Conferences" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Conference_Courses_tbl_Courses" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Conference_Facilities_tbl_Conferences" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Conference_Facilities_tbl_Event_Facilities" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Conference_Sponsors_tbl_Conferences" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Conference_Sponsors_tbl_Fee_Master" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Conference_Sponsors_tbl_Organizations" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Conference_Venue_Types_tbl_Conferences" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Conference_Venue_Types_tbl_Venue_Types" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_ConferenceEnrollment_tbl_Conferences" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_ConferenceEnrollment_tbl_Enrollment_Master" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_ConferenceEnrollment_tbl_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.tbl_States_CountryID_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Course_Credit_Issuers_tbl_Courses" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Course_Credit_Issuers_tbl_Issuers" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Course_Enrollment_tbl_Courses" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Course_Enrollment_tbl_Enrollment_Master" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Course_Facilities_tbl_Courses" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Course_Facilities_tbl_Event_Facilities" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Course_Presenters_tbl_Courses" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Course_Presenters_tbl_Presenters" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Course_Sponsors_tbl_Courses" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Course_Sponsors_tbl_Fee_Master" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Course_Sponsors_tbl_Organizations" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Course_Survey_tbl_Survey" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Survey_Results_tbl_Course_Survey" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Course_Venue_Options_tbl_Courses" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Course_Venue_Options_tbl_Venue_Types" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Degrees_tbl_Degree_Types" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Person_Degrees_tbl_Degrees" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_District_Sites_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_District_Sites_tbl_Sites" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Event_Facilities_tbl_Facilities" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Fee_Details_tbl_Fee_Master" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Fee_Details_tbl_Fee_Types" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Issuers_tbl_Organizations" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Licenses_tbl_License_Levels" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Person_Licenses_tbl_Licenses" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Licensing_tbl_Licensing" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Licensing_tbl_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_org_regulation_tbl_Regulators1" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Person_Organization_Roles_tbl_Organizations" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Providers_tbl_Organizations" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Person_Degrees_tbl_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Person_Licenses_tbl_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Person_Organization_Roles_tbl_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Persons_Professions_tbl_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Person_Organization_Roles_tbl_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Persons_Professions_tbl_professions" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Survey_Questions_tbl_Questions" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Survey_Results_tbl_Question_Scale" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Roles_tbl_Role_Types" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Survey_Questions_tbl_Survey" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.FK_tbl_Survey_Results_tbl_Survey_Questions" ManuallyRouted="false" />
+        <AssociationConnector Association="CeuModel.aspnet_UsersInRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

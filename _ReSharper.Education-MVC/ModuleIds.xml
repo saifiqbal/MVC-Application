@@ -1,0 +1,4 @@
+<Modules>
+  <Module PersistentId="56BC7360-6F9F-448F-AA0A-CEA19955C08C" ModuleId="Ceu-Education-MVC" />
+  <Module PersistentId="5321A800-C2AD-4C71-993F-BE8A729DE656" ModuleId="DAL" />
+</Modules>

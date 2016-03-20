@@ -1,0 +1,155 @@
+﻿@{
+    string welcome = "visible";
+    string logout = "hidden";
+    string dashboard = "hidden";
+    string dbMethodName = "";   /*Setting Dashboard as per login roles*/
+    string dbController = "";   /*Setting Dashboard controller as per login roles*/
+    int roleID = 0;
+    var loginInfo = (System.Data.DataTable)Session["DTLogin"];
+    if (Request.IsAuthenticated)
+    {
+           if (loginInfo != null)
+           {
+                if (loginInfo.Rows.Count > 0)
+                {
+                    roleID = Convert.ToInt32(loginInfo.Rows[0]["RoleID"]); 
+                    welcome = "hidden";
+                    logout = "visible";
+                    dashboard = "visible";
+                    if (roleID == 9)
+                    {
+                        dbMethodName = "Index";
+                        dbController = "SuperUserDB";     
+
+                    }
+                }
+           }
+    }      
+}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+
+        <meta charset="utf-8" />
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/jquery")
+          <link href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+
+    </head>
+    <body style="background-image:url(../Content/Images/back.jpg); width:100%">
+   
+        <div id="Container" style="width:100%">
+        <div style="width:100px; height:520px">
+            <img style="padding-left:5px" src="../Content/Images/SPARQi-Logo.png"  /> 
+
+            <div style="width:140px;padding-top:15px">
+
+              
+
+ 
+                   <div id="Welcomediv" style="padding-bottom:10px;padding-right:20px;padding-left:31px;visibility:@welcome" >
+                         <div style="width:auto">
+                             <a href="@Url.Action("Index", "MainPage")">
+                                <img src="../Content/Images/home.png" style="padding-left:0px"/> 
+                        
+                            </a>
+                         </div>
+                         <div style="width:auto">
+                                  <label style="color:white;font-size:small;padding-left:3px">Home</label>
+                         </div>
+                    </div>
+
+
+
+
+                   <div id="DashboardDiv" style="padding-bottom:10px;padding-right:20px;padding-left:31px;visibility:@dashboard;position:absolute;top:192px" >
+                        <div style="width:auto">
+                             <a href="@Url.Action(dbMethodName, dbController)">
+                                <img src="../Content/Images/dashboard.png" style="padding-left:1px"/> 
+                            </a>
+                            </div>
+                          <div style="width:auto;margin-left:-8px">
+                                <label style="color:white;font-size:small;padding-left:0px">DashBoard</label>
+
+                            </div>
+                    </div>
+
+
+
+
+              
+
+                <div id="ViewEventsDiv" style="padding-bottom:10px;padding-left:31px">
+                   <div style="width:auto">
+                       <a href="@Url.Action("MyAction", "MyController")">
+                                <img src="../Content/Images/BrowseCourse.png" style="padding-left:3px"/> 
+                       </a>
+                    </div>
+                  <div style="width:auto;margin-left:-9px">
+                     <label style="color:white;font-size:small">View Events</label>
+                 </div>
+               </div>
+        
+
+
+                <div id="GetHelpDiv" style="padding-bottom:10px;padding-left:31px">
+                   
+                   <a href="@Url.Action("MyAction", "MyController")">
+                            <img src="../Content/Images/aboutus.png" style="padding-left:3px"/> 
+                   </a></br>
+                   
+                  <label style="color:white;font-size:small;padding-left:0px">Get Help</label>
+                </div>
+
+
+                 <div  id="DivLogOut" style="padding-bottom:10px; visibility:@logout" runat="server">
+                   <a href="@Url.Action("LogOff", "Login")">
+                        <img src="../Content/Images/logout.png" style="padding-left:35px"/> 
+                   </a></br>
+                   
+                     <label style="color:white;font-size:small;padding-left:36px">Logout</label>
+                 </div>
+             
+
+
+
+            </div>
+
+
+        </div>
+
+            <div style="position:absolute; top: 0px; left: 120px; width: 100%; height:auto">
+                <img src="../Content/Images/CEU-logo.png" class="MainArea" />
+
+
+                           <div id="organizatioBorder"  style="background-color:black; height:38px;width:1216px ">
+              <div style="padding-top:7px;padding-left:5px">
+              @RenderSection("OrganizationName",required:false)
+              </div>
+          </div>
+          <div id="Cornerimg" style="position:absolute;top:57px; left:1216px">
+                <img src="../Content/Images/corner.png" />
+            </div>
+
+                <div style="background-image:url('../Content/Images/Innerback.jpg'); border:solid; border-color:black; height:510px; width:1235px; overflow-x:scroll; overflow-y:scroll">
+                     @RenderBody()
+                </div>
+
+            </div>
+        </div>
+            @RenderSection("scripts", required: false)
+</body>
+    </html>
+
+
+
+
+
+
+

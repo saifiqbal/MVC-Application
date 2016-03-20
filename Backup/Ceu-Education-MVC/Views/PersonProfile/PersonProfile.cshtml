@@ -1,0 +1,703 @@
+﻿@using System.Web.UI.WebControls
+@using Ceu_Education_MVC.Models
+@using MvcCheckBoxList.Model
+@using WebGrease.Css.Extensions
+@model Ceu_Education_MVC.Models.PersonProfile
+@{
+    ViewBag.Title = "PersonProfile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+ 
+   
+    
+    //  Layout = null
+    //     
+}
+@using (Html.BeginForm("PProfle", "PersonProfile", FormMethod.Post, new { id = "frmsubmit" }))
+{
+    
+    <div>
+        <div style="float: left">
+            <table>
+                <tr>
+                    <td>
+
+                        <table>
+                            <tr>
+                                <td>
+                                    <label style="font-size: x-large; color: white; font-weight: bold">Identity Information :</label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label style="font-size: medium; color: white">First Name:</label>
+                                    @Html.TextBoxFor(model => model.FName, new { style = "width:400px;margin-left:57px" })
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label style="font-size: medium; color: white">Middle Name:</label>
+                                    @Html.TextBoxFor(model => model.MName, new { style = "width:400px;margin-left:40px" })
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label style="font-size: medium; color: white">Last Name:</label>
+                                    @Html.TextBoxFor(model => model.LName, new { style = "width:400px;margin-left:59px" })
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table>
+                                        <td>
+
+
+                                            <label style="font-size: medium; color: white">Suffix:</label>
+
+
+                                        </td>
+                                        <td style="padding-left: 86px">
+                                            @Html.DropDownListFor(model => model.SuffixID, new SelectList(ViewBag.SuffixColl, "Value", "Text", Model.SuffixID), new { style = "width:228px" })
+                                        </td>
+
+                                        <td style="margin-left: 20px">
+                                            <label style="font-size: medium; color: white">Sex:</label>
+                                            @Html.DropDownListFor(model => model.SexID, new SelectList(ViewBag.SexColl, "Value", "Text", Model.SexID), new { style = "width:142px" })
+                                        </td>
+                                    </table>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <label style="font-size: medium; color: white">Date of Birth:</label>
+
+                           @*         @Html.DropDownListFor(model => model.DateOfBirth.Value.Year, new SelectList(ViewBag.DOBYear, "Value", "Text", Model.DateOfBirth.Value.Year), new { @class = "ddlyearcheckcls", style = "width:70px" })
+                                    @Html.DropDownListFor(model => model.DateOfBirth.Value.Month, new SelectList(ViewBag.DOBMonth, "Value", "Text", Model.DateOfBirth.Value.Month), new { @class = "ddlmonthcheckcls", style = "width:70px" })
+                                    @Html.DropDownListFor(model => model.DateOfBirth.Value.Day, new SelectList(ViewBag.DOBDay, "Value", "Text", Model.DateOfBirth.Value.Day), new { @class = "ddldayscheckcls", style = "width:70px" })
+           *@                     </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    @Html.CheckBox("chkDeceased")
+                                    <label style="color: white; font-size: small">Deceased</label>
+                                    
+                                
+                                </td>
+
+                            </tr>
+
+                        </table>
+
+
+                        <table>
+                            <tr>
+                                <td>
+                                    <label style="font-size: x-large; color: white; font-weight: bold">Residence Address :</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label style="font-size: medium; color: white">State/Province:</label>
+                   
+                                        @Html.DropDownListFor(model => model.Residence_StateID, Model.Stateslist, new { @class = "clsResidence", style = "width:405px;margin-left:34px" })
+                                
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label style="font-size: medium; color: white">Municipaility:</label>
+                                    @Html.DropDownListFor(model => model.Residence_MunicipalityID, Model.CitiesList, new {@class = "clsMunicipality", style = "width:405px;margin-left:40px" })
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td>
+
+                                                <label style="font-size: medium; color: white">BLDG Num:</label>
+                                                @Html.TextBoxFor(model => model.Residence_BuildingNumber, new { style = "width:100px;margin-left:45px" })
+                                            </td>
+
+                                            <td>
+                                                <label style="font-size: medium; color: white">Street Name:</label>
+                                                @Html.TextBoxFor(model => model.Residence_StreetName, new { style = "width:200px;margin-left:3px" })
+
+                                            </td>
+
+
+                                        </tr>
+
+
+                                    </table>
+
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <table>
+                                        <td>
+                                            <label style="font-size: medium; color: white">Unit:</label>
+                                            @Html.TextBoxFor(model => model.Residence_Unit, new { style = "width:100px;margin-left:96px" })
+                                        </td>
+                                        <td>
+                                            <label style="font-size: medium; color: white">ZipCode:</label>
+                                            @Html.TextBoxFor(model => model.Residence_Zipcode, new { style = "width:200px;margin-left:27px" })
+                                        </td>
+                                    </table>
+                                </td>
+                            </tr>
+
+
+                        </table>
+
+
+                        <table>
+                            <tr>
+                                <td>
+                                    <label style="font-size: x-large; color: white; font-weight: bold">Mailing Address :</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    @Html.RadioButton("Sameaddress", "a")
+                                    <label style="font-size: small; color: white">use residence address shown above</label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    @Html.RadioButton("anotherstreetaddress", "a")
+                                    <label style="font-size: small; color: white">use another street address</label>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    @Html.RadioButton("Poboxaddress", "a")
+                                    <label style="font-size: small; color: white">use a PO Box address</label>
+
+                                </td>
+                            </tr>
+                        </table>
+
+                        <table>
+                            <tr>
+                                <td>
+                                    <label style="font-size: x-large; color: white; font-weight: bold">Personal Information:</label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label style="font-size: medium; color: white">Email Personal:</label>
+                                    @Html.TextBoxFor(model => model.EMailPersonal, new { style = "width:400px;margin-left:30px" })
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label style="font-size: medium; color: white">Telephone Home:</label>
+                                    @Html.TextBoxFor(model => model.PhoneWork, new { style = "width:400px;margin-left:18px" })
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label style="font-size: medium; color: white">Telephone Mobile:</label>
+                                    @Html.TextBoxFor(model => model.PhonePersonal, new { style = "width:400px;margin-left:11px" })
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label style="font-size: medium; color: white">SSN:</label>
+                                    @Html.TextBoxFor(model => model.SSN, new { style = "width:400px;margin-left:98px" })
+                                </td>
+                            </tr>
+
+
+                        </table>
+
+                         <table>
+                            <tr>
+                                <td>
+                                    <label style="font-size: x-large; color: white; font-weight: bold">Professions:</label>
+                                </td>
+                            </tr>
+                        </table>
+                         <div style="height: 150px; width: 405px; background-color: white; overflow: scroll; margin-left: 139px">
+                            @{
+                                var data = (SelectList)ViewBag.Professions;
+                            }
+                            <table cellpadding="0" cellspacing="0">
+                                @for (int i = 0; i < data.Count(); i++)
+                                {
+                                    var itemsdata = (IEnumerable<SelectListItem>)data.Items;
+                                            
+                                               
+                                    <tr style="line-height: 0%">
+                                        <td>
+                                            <input type="checkbox" class="clsprofession" id="profchklist" checked="checked" value="@itemsdata.ToList()[i].Value" />
+                                        </td>
+                                        <td>
+                                            <p>@itemsdata.ToList()[i].Text</p>
+                                        </td>
+                                    </tr>
+                                            
+                                }
+                            </table>
+                        </div>
+
+
+                         <table>
+                            <tr>
+                                <td>
+                                    <label style="font-size: x-large; color: white; font-weight: bold">Professional Information:</label>
+                                </td>
+                            </tr>
+
+                            <tr>
+
+
+                                <td>
+                                    <label style="font-size: medium; color: white">School District:</label>
+                                    @Html.TextBoxFor(model => model.Residence_Unit, new { style = "width:400px;margin-left:30px" })
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label style="font-size: medium; color: white">School Name:</label>
+                                    @Html.TextBoxFor(model => model.Residence_Zipcode, new { style = "width:400px;margin-left:40px" })
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label style="font-size: medium; color: white">Telephone Work:</label>
+                                    @Html.TextBoxFor(model => model.Residence_Zipcode, new { style = "width:400px;margin-left:21px" })
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    <label style="font-size: medium; color: white">CT EIN Num:</label>
+                                    @Html.TextBoxFor(model => model.Residence_Zipcode, new { style = "width:400px;margin-left:39px" })
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label style="font-size: medium; color: white">E-mail Work:</label>
+                                    @Html.TextBoxFor(model => model.Residence_Zipcode, new { style = "width:400px;margin-left:44px" })
+                                </td>
+                            </tr>
+                        </table>
+                        
+                        
+                         <table>
+                            <tr>
+                                <td>
+                                    <label style="font-size: x-large; color: white; font-weight: bold">Profession-Related Degrees:</label>
+                                </td>
+                            </tr>
+                        </table>
+                         <div style="height: 150px; width: 405px; background-color: white; overflow: scroll; margin-left: 139px">
+                            @{
+                                    var dataPRD = (SelectList)ViewBag.PersonDegreesColl;
+                            }
+                            <table cellpadding="0" cellspacing="0" class="chklistprd">
+                                 @for (int i = 0; i < Model.PersonDegreesColl.Count(); i++)
+                                {                                               
+                                    <tr style="line-height: 0%">
+                                        <td>
+                                         @*   <input type="checkbox" value="@Model.PersonDegreesColl.ToList()[i].DegreeID" />*@
+                                          @*  @Html.CheckBoxFor(model=>model.PersonDegreesColl[i].selected,new {@id="persondegreeschk",@checked="checked"})*@
+                                        @Html.CheckBox("PersonDegreesChkList",Model.PersonDegreesColl[i].selected,new{@Value=Model.PersonDegreesColl[i].DegreeID})
+                                        </td>
+                                        <td>
+                                            <p>@Model.PersonDegreesColl[i].DegreeDesc</p>
+                                        </td>
+                                    </tr>
+                                            
+                                }
+                            </table>
+                        </div>
+                        
+                         <table>
+                            <tr>
+                                <td>
+                                    <label style="font-size: x-large; color: white; font-weight: bold">Other Degrees:</label>
+                                </td>
+                            </tr>
+                        </table>
+                         <div style="height: 150px; width: 405px; background-color: white; overflow: scroll; margin-left: 139px">
+                            @{
+                                var dataOD = (SelectList)ViewBag.Professions;
+                            }
+                            <table cellpadding="0" cellspacing="0">
+                                @for (int i = 0; i < dataOD.Count(); i++)
+                                {
+                                    var itemsdata = (IEnumerable<SelectListItem>)dataOD.Items;
+                                            
+                                               
+                                    <tr style="line-height: 0%">
+                                        <td>
+                                            <input type="checkbox" checked="checked" />
+
+                                        </td>
+                                        <td>
+                                            <p>@itemsdata.ToList()[i].Text</p>
+                                        </td>
+                                    </tr>
+                                            
+                                }
+                            </table>
+                        </div>
+                        
+
+
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+        <div style="float: right">
+
+            <table>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label style="font-size: x-large; color: white; font-weight: bold">Personal Security Information:</label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label style="font-size: medium; color: white">PersonID:</label>
+                                    @Html.TextBoxFor(model => model.PersonID, new { style = "width:400px;margin-left:57px" })
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label style="font-size: medium; color: white">Username:</label>
+                                    @Html.TextBoxFor(model => model.UserName, new { style = "width:400px;margin-left:52px",@id="usernametxt" })
+                                <span id="result" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-left: 380px">
+                                    @Html.CheckBox("ChktypedChars")
+                                    <label style="color: white; font-size: small">Display typed characters</label>
+
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label style="font-size: medium; color: white">Security Question:</label>
+                                   @Html.DropDownListFor(model=>model.SecretQuestionID,new SelectList( ViewBag.SecretQuesList,"Value","Text",Model.SecretQuestionID))
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label style="font-size: medium; color: white">Answer:</label>
+                                    @Html.TextBoxFor(model=>model.SecretQuestionAnswer,Model.SecretQuestionAnswer, new { style = "width:400px;margin-left:67px" })
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-left: 122px">
+                                    @Html.CheckBox("chkSuperUser")
+                                    <label style="color: white; font-size: small">SuperUser</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-left: 122px">
+                                    @Html.CheckBox("chkAccrep")
+                                    <label style="color: white; font-size: small">Account Rep</label>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <table>
+                            <tr>
+                                <td>
+                                    <label style="font-size: x-large; color: white; font-weight: bold">Organization-Specific Secutiry Information:</label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label style="font-size: medium; color: white">Oganization:</label>
+                                     @Html.DropDownList("Organization",(SelectList)ViewBag.PersonOrganization,new{@id="OrganizationSpecddl"})
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label style="font-size: medium; color: white">Password:</label>
+                                    @Html.TextBox("password", "", new { style = "width:400px;margin-left:55px" })
+                                </td>
+                            </tr>
+                            <tr>
+                              
+                                <td style="padding-left: 380px">
+                                    @Html.CheckBox("ChktypedChars")
+                                    <label style="color: white; font-size: small">Display typed characters</label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label style="font-size: medium; color: white">Organization Roles:</label>
+                                    @*@Html.ListBox("RolesListbox")*@
+
+                                </td>
+                            </tr>
+
+                        </table>
+                        <!--Organization roles checkbox list !-->
+                        <div style="height: 150px; width: 405px; background-color: white; overflow: scroll; margin-left: 139px">
+                            @{
+                                var dataroles = (SelectList)ViewBag.Orgroles;
+                            }
+                            <table cellpadding="0" cellspacing="0">
+                                @for (int i = 0; i < dataroles.Count(); i++)
+                                {
+                                    var itemsdata = (IEnumerable<SelectListItem>)dataroles.Items;
+                                            
+                                               
+                                    <tr style="line-height: 0%">
+                                        <td>
+                                            <input type="checkbox" checked="checked" />
+
+                                        </td>
+                                        <td>
+                                            <p>@itemsdata.ToList()[i].Text</p>
+                                        </td>
+                                    </tr>
+                                            
+                                }
+                            </table>
+                        </div>
+                        
+                        
+                        
+                        <table>
+                            <tr>
+                                <td>
+                                    <label style="font-size: medium; color: white">Organization Member:</label>
+                                    <input type="checkbox"/>
+                                </td>
+                      
+                            </tr>
+                            <tr>
+                                <td>
+                                  
+                                    <label style="font-size: medium; color: white">Join-On Date:</label>
+                       
+                                    @Html.TextBoxFor(model => model.LicenseExpirationDate, new {@class="clsJoinONDate",style = "width:400px;margin-left:43px" })
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label style="font-size: medium; color: white">Expiration Date:</label>
+                                    @Html.TextBoxFor(model=>model.selectedOrganizationspecificSecurity.ExpiryDate, new { style = "width:400px;margin-left:27px" })
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <label style="font-size: medium; color: white">Dues-Amount:</label>
+                                    @Html.TextBoxFor(model=>model.selectedOrganizationspecificSecurity.Dues, new { style = "width:400px;margin-left:38px" })
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    
+                                    <label style="font-size: medium; color: white">Paid-On Date:</label>
+                                    @Html.TextBoxFor(model=>model.selectedOrganizationspecificSecurity.PaidOnDate, new { style = "width:400px;margin-left:41px" })
+                          
+                                
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label style="font-size: medium; color: white">MemberID:</label>
+                                    @Html.TextBoxFor(model=>model.selectedOrganizationspecificSecurity.MemberShipID, new { style = "width:400px;margin-left:57px" })
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <input type="submit" value="Update"/>
+    </div>
+}
+@section OrganizationName
+    {
+
+    <label style="color: white; font-size: large">Organization Name- Person Profile</label>
+
+}
+
+@section scripts
+    {
+    <script>
+        $(function ()
+        {
+
+            $('.clsJoinONDate').datepicker();
+
+            $(".clsprofession").click(function ()
+            {
+                var selectedVal = $(this).val();
+
+          
+//                $('#frmsubmit').attr('action', "/PersonProfile/GetProfessionDegrees").submit();
+////$('#frmsubmit').attr('GetProfessionDegrees', 'PersonProfile');
+              @*  $.ajax({
+                    url: '@Url.Action("GetProfessionDegrees", "PersonProfile")',
+                    contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                    dataType: 'json',
+                    Type: 'GET',
+                    data: { Profid: selectedVal },
+                    success: function (data)
+                    {
+                        var items = "";
+                        $.each(data, function (i, state)
+                        {
+
+                            items += "<tr style='" + "line-height: 0%" + "'>" +
+                                "<td>" +
+
+
+                                "<input type='"+"checkbox"+ "'value=true"+  "id='"+"persondegreeschk"+"'data-val-required='"+"'The selected field is required."+"'data-val='"+"true"+"checked='"+state.Selected+"'>"+
+                               
+                                "</td>" +
+                                "<td>" +
+                                "<p>" + state.DegreeDesc + "</p>"
+                                + "</td>" +
+                                "</tr>";
+                        });
+                        $('.chklistprd').html(items);
+                    },
+                    error: function () {
+                        alert('error');
+
+                    }
+
+                });
+              *@
+
+
+            });
+
+       
+           $(".clsResidence").change(function ()
+           {
+                var selectedText = $(".clsResidence").val();
+                $.ajax({
+                    url: '@Url.Action("GetCities", "PersonProfile")',
+                    contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                    dataType: 'json',
+                    Type: 'GET',
+                    data: { stateid: selectedText },
+                    success: function (data) {
+                        var items = "";
+                        $.each(data, function (i, state)
+                        {
+                            items += "<option value='" + state.ID + "'>" + state.Name + "</option>";
+                            // state.Value cannot contain ' character. We are OK because state.Value = cnt++;
+                        });
+                        $('.clsMunicipality').html(items);
+                    },
+                    error: function () {
+                        alert('error');
+
+                    }
+
+                });
+                return false;
+
+            });
+
+            $(".ddlmonthcheckcls").change(function ()
+            {
+                var month = $(".ddlmonthcheckcls").val();
+                var year = $(".ddlyearcheckcls").val();
+                $.ajax({
+                    url: '@Url.Action("GetDays", "PersonProfile")',
+                        contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                        dataType: 'json',
+                        Type: 'GET',
+                        data: { year: year, month: month },
+                        success: function (data) {
+                            var items = "";
+                            $.each(data, function (i, days) {
+                                items += "<option value='" + days.ID + "'>" + days.Text + "</option>";
+                                // state.Value cannot contain ' character. We are OK because state.Value = cnt++;
+                            });
+                            $('.ddldayscheckcls').html(items);
+                        },
+                        error: function () {
+                            alert('error');
+
+                        }
+
+                    });
+                    return false;
+
+            });
+
+
+
+            $('#usernametxt').blur(function ()
+            {
+                var url = "/PersonProfile/checkusername";
+                var name = $('#usernametxt').val();
+                $.get(url, { username: name }, function (data)
+                {
+                    if (data == "Available") {
+                        $("#result").html("<span style='color:green'>Available</span>");
+                        $("#usernametxt").css('background-color', '');
+                    }
+                    else {
+                        $("#result").html("<span style='color:red'>Not Available</span>");
+                        $("#usernametxt").css('background-color', '#e97878');
+                    }
+                });
+            })
+
+            $("#OrganizationSpecddl").change(function ()
+            {
+
+                $('#frmsubmit').attr('action', "/PersonProfile/UpdateOrganizationSpecSec").submit();
+
+
+
+            });
+
+
+        });
+
+
+    </script>
+}
+
+

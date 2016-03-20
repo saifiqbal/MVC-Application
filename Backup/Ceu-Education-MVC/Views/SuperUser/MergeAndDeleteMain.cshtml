@@ -1,0 +1,32 @@
+﻿@model Ceu_Education_MVC.Models.MergeAndDeleteMain
+
+@{
+    
+}
+
+@using(@Html.BeginForm("DeleteSelected","MergeAndDeleteMain",FormMethod.Post))
+{
+<div>
+<table>
+    <tr>
+        <td>
+           @Html.TextBoxFor(model => model.personidleft)
+           @Html.RadioButton("rbgrp",Model.personidleft,false)
+        </td>
+       
+        <td>
+            @Html.TextBoxFor(model=>model.personidright)
+           @Html.RadioButton("rbgrp",Model.personidright,false)
+
+        </td>
+
+
+    </tr>
+   
+    
+
+</table>
+
+    <input type="submit" value="MergeAndDelete" />
+</div>
+}

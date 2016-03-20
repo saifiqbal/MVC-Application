@@ -1,0 +1,29 @@
+F:\.Net Projects\CEU-Education ASP.net\Ceu-Education\DAL\bin\Debug\DAL.dll
+F:\.Net Projects\CEU-Education ASP.net\Ceu-Education\DAL\bin\Debug\DAL.pdb
+F:\.Net Projects\CEU-Education ASP.net\Ceu-Education\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\.Net Projects\CEU-Education ASP.net\Ceu-Education\DAL\obj\Debug\DAL.dll
+F:\.Net Projects\CEU-Education ASP.net\Ceu-Education\DAL\obj\Debug\DAL.pdb
+C:\Users\softnology\Documents\Visual Studio 2012\Projects\Ceu-Education-MVC\DAL\bin\Debug\DAL.dll
+C:\Users\softnology\Documents\Visual Studio 2012\Projects\Ceu-Education-MVC\DAL\bin\Debug\DAL.pdb
+C:\Users\softnology\Documents\Visual Studio 2012\Projects\Ceu-Education-MVC\DAL\obj\Debug\DAL.dll
+C:\Users\softnology\Documents\Visual Studio 2012\Projects\Ceu-Education-MVC\DAL\obj\Debug\DAL.pdb
+C:\Users\softnology\documents\visual studio 2012\Projects\Ceu-Education-MVC\DAL\bin\Debug\AutoMapper.Net4.dll
+C:\Users\softnology\documents\visual studio 2012\Projects\Ceu-Education-MVC\DAL\bin\Debug\AutoMapper.dll
+C:\Users\softnology\documents\visual studio 2012\Projects\Ceu-Education-MVC\DAL\bin\Debug\AutoMapper.xml
+C:\Users\softnology\Documents\Visual Studio 2012\Projects\Ceu-Education-MVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+H:\Practice_Projects\Ceu-Education-MVC\DAL\bin\Debug\AutoMapper.Net4.dll
+H:\Practice_Projects\Ceu-Education-MVC\DAL\bin\Debug\DAL.dll
+H:\Practice_Projects\Ceu-Education-MVC\DAL\bin\Debug\DAL.pdb
+H:\Practice_Projects\Ceu-Education-MVC\DAL\bin\Debug\AutoMapper.dll
+H:\Practice_Projects\Ceu-Education-MVC\DAL\bin\Debug\AutoMapper.xml
+H:\Practice_Projects\Ceu-Education-MVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+H:\Practice_Projects\Ceu-Education-MVC\DAL\obj\Debug\DAL.dll
+H:\Practice_Projects\Ceu-Education-MVC\DAL\obj\Debug\DAL.pdb
+D:\Practice_Projects\Ceu-Education-MVC\DAL\bin\Debug\AutoMapper.Net4.dll
+D:\Practice_Projects\Ceu-Education-MVC\DAL\bin\Debug\DAL.dll
+D:\Practice_Projects\Ceu-Education-MVC\DAL\bin\Debug\DAL.pdb
+D:\Practice_Projects\Ceu-Education-MVC\DAL\bin\Debug\AutoMapper.dll
+D:\Practice_Projects\Ceu-Education-MVC\DAL\bin\Debug\AutoMapper.xml
+D:\Practice_Projects\Ceu-Education-MVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Practice_Projects\Ceu-Education-MVC\DAL\obj\Debug\DAL.dll
+D:\Practice_Projects\Ceu-Education-MVC\DAL\obj\Debug\DAL.pdb

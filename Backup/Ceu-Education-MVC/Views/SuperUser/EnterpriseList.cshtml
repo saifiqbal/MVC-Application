@@ -1,0 +1,19 @@
+﻿@model Ceu_Education_MVC.Models.EnterpriseList
+
+@{
+  
+    string HeaderName = "";
+    var LoginData = (System.Data.DataTable)Session["DTLogin"];
+    if (LoginData != null)
+    {
+        HeaderName = LoginData.Rows[0]["OrganizationName"].ToString() + " - " + "Enterprise List";
+    }
+}
+
+
+          
+
+@section OrganizationName
+{
+    <label style="color:white; font-size:large">@HeaderName</label>
+}

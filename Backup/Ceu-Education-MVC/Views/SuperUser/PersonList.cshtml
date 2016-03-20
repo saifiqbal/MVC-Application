@@ -1,0 +1,106 @@
+﻿@model Ceu_Education_MVC.Models.PersonListModel
+@{
+    string HeaderName = "";
+   var PersonID = 0;
+    var LoginData = (System.Data.DataTable)Session["DTLogin"];
+    if(LoginData!=null)
+    {
+        HeaderName = LoginData.Rows[0]["OrganizationName"].ToString() + " - " + "All Person";
+    }
+    List<Ceu_Education_MVC.Models.PersonListModel> plist = (List<Ceu_Education_MVC.Models.PersonListModel>)ViewBag.PersonList;
+          
+          
+}
+
+    
+<table id="persontable"  class="table muffin table-bordered table-hover margin-bottom">
+	          <thead>
+          
+	            <tr>
+                    <th>FirstName</th>
+	                <th>MiddleName</th>
+                    <th>LastName</th>
+                    <th>DateOfBirth</th>
+                    <th>Telephone</th>
+                    <th>Mobile</th>
+                    <th>EmailAddress</th>
+                    <th>PersonID</th>
+                    <th>Member</th>
+	            </tr>
+	          </thead>
+	          <tbody>
+
+                   @foreach (var lisitem in plist)
+                   {
+                       <tr>
+                        <td class="frname">@lisitem.FirstName</td>
+                        <td class="Mname">@lisitem.MiddleName</td>
+                        <td class="lname" >@lisitem.LastName</td>
+                        <td class="dob">@lisitem.DateofBirth</td>
+                        <td class="tel">@lisitem.Telephone</td>
+                        <td class="mob">@lisitem.Mobile</td>
+                        <td class="emailaddress">@lisitem.EmailAddress</td>
+                        <td class="personid">@lisitem.PersonID</td>
+                           <td><input type="checkbox" name="IsMember" class="chkbox" id="IsMember" checked=@lisitem.IsMember /></td>
+                          @* <td>@Html.CheckBox("IsMember", )</td>*@
+                       </tr>
+                   }
+	 </tbody>
+</table>
+
+@section scripts
+{
+    <script type="text/javascript">
+        $(function ()
+        {
+            $("table").hide(0).delay(500).fadeIn(3000)
+        });
+    
+        $(function ()
+        {
+            $(".chkbox").change(function()
+            {
+                if (this.checked)
+                {
+                    var personid = $(this).closest('tr').children('td.personid').text();
+                    var ischecked = 1;
+                    $.post('PersonList/PersonList', { "personid": personid, "ischecked": ischecked }, function (data)
+                    {
+                        var message = data.Message;
+                        alert(message);
+                    });
+                }
+                else
+                {
+
+                    var personid = $(this).closest('tr').children('td.personid').text();
+                    var ischecked = 0;
+                    $.post('PersonList/PersonList', { "personid": personid, "ischecked": ischecked }, function (data) {
+                        var message = data.Message;
+                        alert(message);
+                    });
+                }
+
+            });
+
+        });
+
+        $(function () {
+            $('td').dblclick(function ()
+            {
+                var personid = $(this).closest('tr').children('td.personid').text();
+             
+                window.location.href ='@Url.Action("PersonProfile", "PersonProfile")' + '?Personid=' + personid;   
+            });
+        });
+
+
+
+ </script>
+    
+}
+
+@section OrganizationName
+{
+    <label style="color:white; font-size:large">@HeaderName</label>
+}

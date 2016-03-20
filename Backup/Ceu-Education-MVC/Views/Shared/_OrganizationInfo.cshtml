@@ -1,0 +1,43 @@
+﻿@model Ceu_Education_MVC.Models.MainPage
+
+@{
+    var orginfo = (Ceu_Education_MVC.Models.MainPage)ViewBag.OrgInfo;  
+}
+
+
+  <table style="width:100%">
+              <tr>
+                  <td style="text-align:center">
+        
+                        <label style="color:white; font-size:xx-large">Welcome to the Event Management Site of</label>
+                  </td>
+              </tr>
+              <tr>
+                  
+
+                  <td style="text-align:center">
+                    <label style="color:white; font-size:xx-large">@orginfo.OrganizationName</label>
+                  </td>
+                 
+              
+              </tr>
+              <tr>
+                  <td style="text-align:center">
+                     <label style="color:white; font-size:smaller">@orginfo.OrgAddress</label>
+                      </td>
+              </tr>
+              <tr>
+                  <td style="text-align:center">
+                   <img src="../Content/Images/SPARQi-Logo.png" style="height:100px"/>
+                      </td>
+              </tr>
+
+              <tr>
+                  <td style="text-align:center">
+                     <label style="color:white; font-size:medium">Please select one of the following options</label>
+                       
+                      </td>
+              </tr>
+              
+      
+ </table>

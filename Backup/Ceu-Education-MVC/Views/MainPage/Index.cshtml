@@ -1,0 +1,76 @@
+﻿@model Ceu_Education_MVC.Models.MainPage
+
+@{
+    var OrgData = (Ceu_Education_MVC.Models.MainPage)ViewBag.OrgInfo;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <script src="~/Scripts/jquery-1.7.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    
+    @using (Html.BeginForm()) {
+        @Html.ValidationSummary(true)
+    
+          <div>
+         
+              @Html.Partial("_OrganizationInfo",OrgData)
+              
+          <div style="position:relative;top:30px;left:160px">
+
+               <a href="@Url.Action("DoLogin","Login")">
+                    <img  src="../Content/Images/homepage_Login.png"  />
+                 
+               </a>
+              <a href="@Url.Action("","")">
+                    <img  src="../Content/Images/homepage_forgot.png"  />
+               </a>
+              <a href="@Url.Action("","")">
+                    <img  src="../Content/Images/homepage_Register.png"  />
+               </a>
+              <a href="@Url.Action("","")">
+                    <img  src="../Content/Images/homepage_Browse.png"  />
+               </a>
+          
+          </div>
+
+
+           <div style="position:relative;top:10px;left:160px">
+
+               <a href="@Url.Action("","")">
+                    <img  src="../Content/Images/a.png"  />
+               </a>
+               
+               <a href="@Url.Action("","")">
+                    <img  src="../Content/Images/c.png"  />
+               </a>
+                
+               <a href="@Url.Action("","")">
+                    <img  src="../Content/Images/b.png"  />
+               </a>
+               
+               <a href="@Url.Action("","")">
+                    <img  src="../Content/Images/d.png"  />
+               </a>
+
+          </div>
+          
+      </div>
+
+
+    }
+    
+</body>
+</html>
+@section OrganizationName
+{
+    <label style="color:white; font-size:large">@OrgData.OrganizationName</label>
+}
+

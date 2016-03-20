@@ -1,0 +1,1233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{56BC7360-6F9F-448F-AA0A-CEA19955C08C}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ceu_Education_MVC</RootNamespace>
+    <AssemblyName>Ceu-Education-MVC</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\packages\AutoMapper.3.2.1\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper.Net4">
+      <HintPath>..\packages\AutoMapper.3.2.1\lib\net40\AutoMapper.Net4.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MvcCheckBoxList">
+      <HintPath>..\packages\MvcCheckBoxList.1.4.4.5\lib\net45\MvcCheckBoxList.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activities" />
+    <Reference Include="System.ServiceModel.Channels" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.6\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20710.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebMatrix.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.Data.2.0.20710.0\lib\net40\WebMatrix.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebPages.OAuth, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.OAuth.2.0.20710.0\lib\net40\Microsoft.Web.WebPages.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="WebMatrix.WebData, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.WebData.2.0.20710.0\lib\net40\WebMatrix.WebData.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.0.3.12153\lib\net40-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\AuthConfig.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\CustomViewEngine.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="aspnet_Applications.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_Membership.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_Membership_GetPasswordWithFormat_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_Membership_GetPassword_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_Membership_GetUserByName_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_Membership_GetUserByUserId_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_Paths.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_PersonalizationAllUsers.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_PersonalizationPerUser.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_Profile.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_Profile_GetProperties_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_Roles.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_SchemaVersions.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_Users.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_UsersInRoles_RemoveUsersFromRoles_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_WebEvent_Events.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CeuEducationEDM.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CeuEducationEDM.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CeuEducationEDM.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CeuEducationEDM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CeuEducationEDM.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\CompanyDashBoardController.cs" />
+    <Compile Include="Controllers\EnterpriseListController.cs" />
+    <Compile Include="Controllers\GetAllPersonsController.cs" />
+    <Compile Include="Controllers\HelloWorldController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\MainPageController.cs" />
+    <Compile Include="Controllers\MergeAndDeleteController.cs" />
+    <Compile Include="Controllers\MergeAndDeleteMainController.cs" />
+    <Compile Include="Controllers\PersonListController.cs" />
+    <Compile Include="Controllers\PersonProfileController.cs" />
+    <Compile Include="Controllers\SuperUserDBController.cs" />
+    <Compile Include="Controllers\UnAuthorizedController.cs" />
+    <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
+    <Compile Include="fnPOSplitter_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="f_sp_Login_Users_Test_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetAllAcountRep_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetAllPersonsWithRoleID_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetAllProfessionsForOrganization_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetAllProfessions_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetConferenceAmountAndTransactionID_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetConferenceAttendeeListForConferenceRoster_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetConferenceforPushEnrollment_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetCourseAmountAndTransactionID_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetCourseAmount_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetCoursesforPushEnrollment_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetDuplicatePersonRecords_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetFeeMatrixForEnterprise_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetItineraries_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetPaymentsReport_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetPendingApprovalSponsors_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetPersonCredentialsNewUser_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetPersonCredentials_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetProducts_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetProffesionRelatedDeg_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetUncompletedSurveys_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetUpForSelectedOID_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CompanyDashBoard.cs" />
+    <Compile Include="Models\EnterpriseList.cs" />
+    <Compile Include="Models\Login.cs" />
+    <Compile Include="Models\MainPage.cs" />
+    <Compile Include="Models\MergeAndDelete.cs" />
+    <Compile Include="Models\MergeAndDeleteMain.cs" />
+    <Compile Include="Models\PersonList.cs" />
+    <Compile Include="Models\PersonProfile.cs" />
+    <Compile Include="Models\SUDashBoard.cs" />
+    <Compile Include="NewUserApproval_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="PaymentMethod.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentReport.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sp_AllFacilities_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_AllPresentersList_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_AllQuestionsWithOrderbySurveyID_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_ConferenceData_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_ConferenceDates_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_ConferenceFacilities_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_ConferenceSponsorOrganization_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_Confernces_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_CourseEffects_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_CourseEvaluationMethod_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_CourseEvaluation_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_CourseFocuses_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_CourseLearningOutcomes_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_CourseSurvey_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_CourseTopics_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_FacilityDetail_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetAccountRepOrg_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetActivityReportInformationByDateRange_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetActivityReportInformation_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetAllConferenesList_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_GetAllCoursesCompletedSurvey_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetAllOrganizationsforPerson_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetAllOrganizationsWithOID_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetAllOrganizations_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetAllPersons_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetAllQuestionsList_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetCertificateInformation_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetCEUIssedOrganization_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetConferenceDescriptionForConfereneRoster_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetConfernceAssociatedCourseInformationViaID_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetConfernceFeeMatrixByConfrenceID_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetCourseAttendeeListForCourseRoster_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetCourseFeeMatrixByCourseID_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetCourseInformationForCourseRoster_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetCourseIssuersListForSurveySelection_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetCoursesListByOrganization_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetCourseSurveyRate_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetCourseSurveyView_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetEcommerceTransactions_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetHelpFiles_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetOrganizationCredentialByID_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetOrganizationRole_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetPersonsComepletedSurveyByCourse_GET_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetPersonsToSendCredentials_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_GetSponsors_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetSuerveyQuestionsAndOptions_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetSurveyResultToView_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetUserInfo_ByPersonID_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetWhatsNew_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_Get_ActiveCountries_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_Get_ActiveState_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_Get_CEUIssuers_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_Get_CityByStateID_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_Get_CoursePresenters_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Get_CoursesListByPersonID_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_Get_CourseSponsors_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Get_Courses_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_Get_Course_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Get_OpenedCourses_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Get_OrganizationByGUID_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Get_PresenterCoursesListByPersonID_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Get_Roles_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Get_SecretQuestions_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Get_Sex_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_Get_SponsorFees_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Get_Suffixes_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Get_User_Credentials_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_IsPersonCanApplyForSurvey_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Login_Validate_Android_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Login_Validate_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_PersonDetail_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_PersonDetail_Get_Tempt_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_PersonList_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_PersonOrginzationRoles_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Person_Exists_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_PresentersList_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Register_Person_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_SchoolDistricts_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_SchoolDistricts_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_SchoolNames_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_SurveyListForQuestionEditing_Get_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_tbl_Districts_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_tbl_Schools_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_ValidateUser_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_AbondonPassword.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_AbondonUserNames.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_AboutUs.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_AddressType.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Attendance.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_CEU_Certificate_Download.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Cities.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ConferenceEnrollment.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Conferences.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Conference_Courses.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Conference_Dates.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Conference_Facilities.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Conference_Sponsors.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Conference_Venue_Types.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Countries.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Courses.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Course_Attendance.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Course_Credit_Issuers.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Course_Effects.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Course_Enrollment.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Course_Evaluation_Methods.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Course_Facilities.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Course_Focuses.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Course_Learning_Outcomes.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Course_Presenters.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Course_Sponsors.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Course_Survey.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Course_Topics.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Course_Venue_Options.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Credential_Phrases.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Current_User.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Degrees.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Degree_Types.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Districts.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_District_Sites.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Ecommerce_Transactions.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Enrollment_Master.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Event_Facilities.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Facilities.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Fee_Details.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Fee_Master.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Fee_Types.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Issuers.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Licenses.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_License_Levels.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Licensing.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OnlineCourses.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Organizations.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Organization_Professions.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_org_regulation.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Person.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_PersonOrganizationMemberships.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Persons_Professions.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Person_2.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Person_Degrees.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Person_Licenses.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Person_Organization_Roles.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Presenters.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_professions.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Profession_Degrees.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Providers.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Questions.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_QuestionScale.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Regulators.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Roles.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Role_Types.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_School.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Secret_Questions.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Sex.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Sites.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SPARQi_Products.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_States.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Suffixes.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Survey.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Survey_Questions.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Survey_Results.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Upload_Files.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Venue_Types.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_WhatsNew.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UnrollFromConferences_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UnrollFromcourse_Result.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VideosHistory.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_aspnet_Applications.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_aspnet_MembershipUsers.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_aspnet_Profiles.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_aspnet_Roles.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_aspnet_Users.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_aspnet_UsersInRoles.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_aspnet_WebPartState_Paths.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_aspnet_WebPartState_Shared.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_aspnet_WebPartState_User.cs">
+      <DependentUpon>CeuEducationEDM.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\Ceu-Education-MVC.dll" />
+    <Content Include="bin\Ceu-Education-MVC.pdb" />
+    <Content Include="bin\DAL.dll" />
+    <Content Include="bin\DAL.pdb" />
+    <Content Include="bin\DotNetOpenAuth.AspNet.dll" />
+    <Content Include="bin\DotNetOpenAuth.AspNet.xml" />
+    <Content Include="bin\DotNetOpenAuth.Core.dll" />
+    <Content Include="bin\DotNetOpenAuth.Core.xml" />
+    <Content Include="bin\DotNetOpenAuth.OAuth.Consumer.dll" />
+    <Content Include="bin\DotNetOpenAuth.OAuth.Consumer.xml" />
+    <Content Include="bin\DotNetOpenAuth.OAuth.dll" />
+    <Content Include="bin\DotNetOpenAuth.OAuth.xml" />
+    <Content Include="bin\DotNetOpenAuth.OpenId.dll" />
+    <Content Include="bin\DotNetOpenAuth.OpenId.RelyingParty.dll" />
+    <Content Include="bin\DotNetOpenAuth.OpenId.RelyingParty.xml" />
+    <Content Include="bin\DotNetOpenAuth.OpenId.xml" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.xml" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Microsoft.Web.WebPages.OAuth.dll" />
+    <Content Include="bin\Microsoft.Web.WebPages.OAuth.xml" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Newtonsoft.Json.xml" />
+    <Content Include="bin\System.Net.Http.Formatting.dll" />
+    <Content Include="bin\System.Net.Http.Formatting.xml" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Helpers.xml" />
+    <Content Include="bin\System.Web.Http.dll" />
+    <Content Include="bin\System.Web.Http.WebHost.dll" />
+    <Content Include="bin\System.Web.Http.WebHost.xml" />
+    <Content Include="bin\System.Web.Http.xml" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Mvc.xml" />
+    <Content Include="bin\System.Web.Optimization.dll" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.Razor.xml" />
+    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
+    <Content Include="bin\System.Web.WebPages.Deployment.xml" />
+    <Content Include="bin\System.Web.WebPages.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.xml" />
+    <Content Include="bin\System.Web.WebPages.xml" />
+    <Content Include="bin\WebGrease.dll" />
+    <Content Include="bin\WebMatrix.Data.dll" />
+    <Content Include="bin\WebMatrix.Data.xml" />
+    <Content Include="bin\WebMatrix.WebData.dll" />
+    <Content Include="bin\WebMatrix.WebData.xml" />
+    <Content Include="assets\ckeditor\ckeditor.js" />
+    <Content Include="assets\ckeditor\config.js" />
+    <Content Include="assets\ckeditor\contents.css" />
+    <Content Include="assets\ckeditor\styles.js" />
+    <Content Include="assets\minified\aui-production.css" />
+    <Content Include="assets\fonts\font_awesome\fontawesome-webfont.svg" />
+    <Content Include="assets\images\animated-overlay.gif" />
+    <Content Include="assets\images\colorpicker.png" />
+    <Content Include="assets\images\dummy\image1.jpg" />
+    <Content Include="assets\images\gravatar.jpg" />
+    <Content Include="assets\images\icons\apple-touch-icon-114-precomposed.png" />
+    <Content Include="assets\images\icons\apple-touch-icon-144-precomposed.png" />
+    <Content Include="assets\images\icons\apple-touch-icon-57-precomposed.png" />
+    <Content Include="assets\images\icons\apple-touch-icon-72-precomposed.png" />
+    <Content Include="assets\images\icons\favicon.png" />
+    <Content Include="assets\images\jcrop.gif" />
+    <Content Include="assets\images\loader-dark.gif" />
+    <Content Include="assets\images\login-bg.png" />
+    <Content Include="assets\js\minified\aui-production.js" />
+    <Content Include="assets\js\minified\core\raphael.min.js" />
+    <Content Include="assets\js\minified\demo\charts-justgage-demo.min.js" />
+    <Content Include="assets\js\minified\demo\charts-morris-demo.min.js" />
+    <Content Include="assets\js\minified\widgets\charts-justgage.min.js" />
+    <Content Include="assets\js\minified\widgets\charts-morris.min.js" />
+    <Content Include="assets\multiupload\cors\jquery.xdr-transport.js" />
+    <Content Include="assets\multiupload\fileupload.css" />
+    <Content Include="assets\multiupload\jquery.fileupload-audio.js" />
+    <Content Include="assets\multiupload\jquery.fileupload-image.js" />
+    <Content Include="assets\multiupload\jquery.fileupload-process.js" />
+    <Content Include="assets\multiupload\jquery.fileupload-ui.js" />
+    <Content Include="assets\multiupload\jquery.fileupload-validate.js" />
+    <Content Include="assets\multiupload\jquery.fileupload-video.js" />
+    <Content Include="assets\multiupload\jquery.fileupload.js" />
+    <Content Include="assets\multiupload\jquery.iframe-transport.js" />
+    <Content Include="assets\multiupload\main.js" />
+    <Content Include="assets\themes\minified\fides\color-schemes\dark-blue.css" />
+    <Content Include="assets\themes\minified\fides\common.css" />
+    <Content Include="assets\themes\minified\fides\responsive.css" />
+    <Content Include="Content\Images\a.png" />
+    <Content Include="Content\Images\aboutus.png" />
+    <Content Include="Content\Images\aero bg.png" />
+    <Content Include="Content\Images\Arrow.png" />
+    <Content Include="Content\Images\b.png" />
+    <Content Include="Content\Images\back.jpg" />
+    <Content Include="Content\Images\Banner.jpg" />
+    <Content Include="Content\Images\BrowseCourse.png" />
+    <Content Include="Content\Images\c.png" />
+    <Content Include="Content\Images\CEU-logo.png" />
+    <Content Include="Content\Images\CEU-logo1.png" />
+    <Content Include="Content\Images\corner.png" />
+    <Content Include="Content\Images\createconference.png" />
+    <Content Include="Content\Images\CreateCourses.png" />
+    <Content Include="Content\Images\d.png" />
+    <Content Include="Content\Images\dashboard.png" />
+    <Content Include="Content\Images\enterprise.png" />
+    <Content Include="Content\Images\error.png" />
+    <Content Include="Content\Images\forgetPassword.png" />
+    <Content Include="Content\Images\green-tick.png" />
+    <Content Include="Content\Images\home.png" />
+    <Content Include="Content\Images\homepage_Browse.png" />
+    <Content Include="Content\Images\homepage_forgot.png" />
+    <Content Include="Content\Images\homepage_Login.png" />
+    <Content Include="Content\Images\homepage_Register.png" />
+    <Content Include="Content\Images\homepage_Register1.png" />
+    <Content Include="Content\Images\info.png" />
+    <Content Include="Content\Images\Innerback.jpg" />
+    <Content Include="Content\Images\Innerback1.jpg" />
+    <Content Include="Content\Images\login.png" />
+    <Content Include="Content\Images\LoginIcon.png" />
+    <Content Include="Content\Images\logout.png" />
+    <Content Include="Content\Images\MyCourses.png" />
+    <Content Include="Content\Images\noprofilepic.jpg" />
+    <Content Include="Content\Images\noprofilepicfemale-old.jpg" />
+    <Content Include="Content\Images\noprofilepicfemale.jpg" />
+    <Content Include="Content\Images\noprofilepicold.jpg" />
+    <Content Include="Content\Images\OrganizationsLogo\1.gif" />
+    <Content Include="Content\Images\OrganizationsLogo\1.jpg" />
+    <Content Include="Content\Images\OrganizationsLogo\1.png" />
+    <Content Include="Content\Images\OrganizationsLogo\10.png" />
+    <Content Include="Content\Images\OrganizationsLogo\11.png" />
+    <Content Include="Content\Images\OrganizationsLogo\1_Signature.png" />
+    <Content Include="Content\Images\OrganizationsLogo\2.png" />
+    <Content Include="Content\Images\OrganizationsLogo\3.gif" />
+    <Content Include="Content\Images\OrganizationsLogo\3.png" />
+    <Content Include="Content\Images\OrganizationsLogo\3_Signature.png" />
+    <Content Include="Content\Images\OrganizationsLogo\5.png" />
+    <Content Include="Content\Images\OrganizationsLogo\5_Signature.png" />
+    <Content Include="Content\Images\OrganizationsLogo\7.png" />
+    <Content Include="Content\Images\OrganizationsLogo\8.png" />
+    <Content Include="Content\Images\OrganizationsLogo\8_Signature.png" />
+    <Content Include="Content\Images\Orignian.jpg" />
+    <Content Include="Content\Images\Pending.png" />
+    <Content Include="Content\Images\Pending1.png" />
+    <Content Include="Content\Images\profile.png" />
+    <Content Include="Content\Images\question.png" />
+    <Content Include="Content\Images\registration.png" />
+    <Content Include="Content\Images\school.png" />
+    <Content Include="Content\Images\Selected1.png" />
+    <Content Include="Content\Images\SelectedArrow.png" />
+    <Content Include="Content\Images\SPARQi-Logo.png" />
+    <Content Include="Content\Images\SPARQi-Logo1.png" />
+    <Content Include="Content\Images\ViewCourses.png" />
+    <Content Include="Content\Images\ViewDetail.png" />
+    <Content Include="Content\Images\ViewEnterprise.png" />
+    <Content Include="Content\Images\warning.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Images\OrganizationsLogo\Registration.csv" />
+    <Content Include="obj\Debug\Ceu-Education-MVC.csprojResolveAssemblyReference.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <EntityDeploy Include="CeuEducationEDM.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CeuEducationEDM.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="CeuEducationEDM.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CeuEducationEDM.edmx</DependentUpon>
+      <LastGenOutput>CeuEducationEDM.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="CeuEducationEDM.edmx.diagram">
+      <DependentUpon>CeuEducationEDM.edmx</DependentUpon>
+    </Content>
+    <Content Include="CeuEducationEDM.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CeuEducationEDM.edmx</DependentUpon>
+      <LastGenOutput>CeuEducationEDM.cs</LastGenOutput>
+    </Content>
+    <Content Include="assets\fonts\font_awesome\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\font_awesome\fontawesome-webfont_2d2816fe.eot" />
+    <Content Include="assets\fonts\font_awesome\fontawesome-webfont_aea8981c.eot" />
+    <Content Include="assets\fonts\font_awesome\fontawesome-webfont_aea8981c.ttf" />
+    <Content Include="assets\fonts\font_awesome\fontawesome-webfont_aea8981c.woff" />
+    <Content Include="assets\images\dummy\Thumbs.db" />
+    <Content Include="assets\images\icons\Thumbs.db" />
+    <Content Include="assets\images\Thumbs.db" />
+    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="obj\Debug\Ceu-Education-MVC.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Ceu-Education-MVC.dll" />
+    <Content Include="obj\Debug\Ceu-Education-MVC.pdb" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\knockout-2.1.0.debug.js" />
+    <Content Include="Scripts\knockout-2.1.0.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Images\accent.png" />
+    <Content Include="Images\bullet.png" />
+    <Content Include="Images\heroAccent.png" />
+    <Content Include="Images\orderedList0.png" />
+    <Content Include="Images\orderedList1.png" />
+    <Content Include="Images\orderedList2.png" />
+    <Content Include="Images\orderedList3.png" />
+    <Content Include="Images\orderedList4.png" />
+    <Content Include="Images\orderedList5.png" />
+    <Content Include="Images\orderedList6.png" />
+    <Content Include="Images\orderedList7.png" />
+    <Content Include="Images\orderedList8.png" />
+    <Content Include="Images\orderedList9.png" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\MainPage\Index.cshtml" />
+    <Content Include="Views\Shared\_OrganizationInfo.cshtml" />
+    <Content Include="Views\Login\Dologin.cshtml" />
+    <Content Include="Views\MainPage\UnAuthorized.cshtml" />
+    <Content Include="Views\SuperUser\DashBoard\SUDashBoard.cshtml" />
+    <Content Include="Views\SuperUser\PersonList.cshtml" />
+    <Content Include="Views\SuperUser\EnterpriseList.cshtml" />
+    <Content Include="Views\PersonProfile\PersonProfile.cshtml" />
+    <Content Include="Views\SuperUser\MergeAndDelete.cshtml" />
+    <Content Include="Views\SuperUser\MergeAndDeleteMain.cshtml" />
+    <Content Include="Views\Shared\_SuperAdminLayout.cshtml" />
+    <Content Include="Views\SuperCompany\CompanyDashBoard.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="Views\EnterpriseList\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{5321a800-c2ad-4c71-993f-be8a729de656}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:6948/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\packages\AutoMapper.3.2.1\tools\AutoMapper.targets" Condition="Exists('..\packages\AutoMapper.3.2.1\tools\AutoMapper.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

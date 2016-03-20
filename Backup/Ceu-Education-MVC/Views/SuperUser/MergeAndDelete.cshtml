@@ -1,0 +1,87 @@
+﻿@model Ceu_Education_MVC.Models.MergeAndDeleteModel
+@{
+     
+  
+}
+@using (Html.BeginForm("MergeAndDeleteMain", "MergeAndDeleteMain", FormMethod.Post, new {id="frmsubmit"}))
+{
+
+    @Html.ValidationSummary(true)
+    <table id="MergeAndDeleteList" class="frmtable">
+        <thead>
+
+            <tr>
+                <th>CHK</th>
+                <th>PersonID</th>
+                <th>FirstName</th>
+                <th>MiddleName</th>
+                <th>LastName</th>
+                <th>UserID</th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+            @for (int i = 0; i < Model.PersonList.Count; i++)
+            {
+                <tr>
+
+                    <td>@Html.CheckBoxFor(model => model.PersonList[i].IsSelected)</td>
+                    <td>@Html.DisplayTextFor(model => model.PersonList[i].PersonID)</td>  @Html.HiddenFor(model => model.PersonList[i].PersonID)
+                    <td>@Html.DisplayTextFor(model => model.PersonList[i].FirstName)</td> @Html.HiddenFor(model => model.PersonList[i].FirstName)
+                    <td>@Html.DisplayTextFor(model => model.PersonList[i].MiddleName)</td>@Html.HiddenFor(model => model.PersonList[i].MiddleName)
+                    <td>@Html.DisplayTextFor(model => model.PersonList[i].LastName)</td>@Html.HiddenFor(model => model.PersonList[i].LastName)
+                    <td>@Html.DisplayTextFor(model => model.PersonList[i].UserName)</td>@Html.HiddenFor(model => model.PersonList[i].UserName)
+
+                </tr>
+            }
+
+
+        </tbody>
+    </table>@*
+
+    <p>
+        <input type="submit" value="Create" />
+    </p>*@
+}
+
+@section Scripts{
+    <script>
+        $(function () {
+            $('td').dblclick(function ()
+            {
+                //alert('s');
+                $('#frmsubmit').submit();
+               
+                  @*  $.ajax({
+                        url: "@(Url.Action("StoreData", "MergeAndDelete"))",
+                        type: 'POST',
+                        dataType: 'json',
+                        data: $("#formAnswerScheme").serialize(),
+                        async: false,
+                        success: function (data) {
+                            console.log(data);
+                            $("#divAnswerSchemeContainer").html(data);
+                        },
+                        error: function (xhr, textStatus, exceptionThrown) { alert(JSON.parse(xhr.responseText)); }
+                    });*@
+            
+                 @* $.ajax({
+                      type: 'post',
+                      url: "@(Url.Action("StoreData", "MergeAndDelete"))",
+                      data: '{PersonCollection:' + JSON.stringify(model) + '}',
+                      contentType: 'application/json; charset=utf-8',
+                      dataType: "json",
+                      success: function (data)
+                      {
+                          alert(data);
+                      }
+                      
+                  });*@
+              
+                @* //  window.location.href = '@Url.Action("MergeAndDeleteMain","MergeAndDeleteMain")';*@
+            });
+        });
+    </script>
+
+}

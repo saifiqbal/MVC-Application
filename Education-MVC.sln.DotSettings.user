@@ -1,0 +1,19 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=56BC7360_002D6F9F_002D448F_002DAA0A_002DCEA19955C08C_002Fd_003AApp_005FStart_002Ff_003ACeuEducationEntities_002Ecs/@EntryIndexedValue">ExplicitlyExcluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=56BC7360_002D6F9F_002D448F_002DAA0A_002DCEA19955C08C_002Fd_003AControllers_002Ff_003AMainPageController_002Ecs/@EntryIndexedValue">ExplicitlyExcluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=56BC7360_002D6F9F_002D448F_002DAA0A_002DCEA19955C08C_002Fd_003AControllers_002Ff_003APersonProfileController_002Ecs/@EntryIndexedValue">ExplicitlyExcluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=56BC7360_002D6F9F_002D448F_002DAA0A_002DCEA19955C08C_002Fd_003AModels_002Ff_003APersonProfile_002Ecs/@EntryIndexedValue">ExplicitlyExcluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=56BC7360_002D6F9F_002D448F_002DAA0A_002DCEA19955C08C_002Fd_003AViews_002Fd_003APersonProfile_002Ff_003APersonProfile_002Ecshtml/@EntryIndexedValue">ExplicitlyExcluded</s:String>
+	
+	
+	
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=56BC7360_002D6F9F_002D448F_002DAA0A_002DCEA19955C08C_002Ff_003ACeuEducationEDM_002EContext_002Ecs/@EntryIndexedValue">ExplicitlyExcluded</s:String>
+	
+	
+	
+	
+	<s:Boolean x:Key="/Default/Environment/SearchAndNavigation/MergeOccurences/@EntryValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/Bookmarks/NumberedBookmarks/=Bookmark8/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/Housekeeping/Bookmarks/NumberedBookmarks/=Bookmark8/Coords/@EntryValue">(Doc Ln 68 Col 42)</s:String>
+	<s:String x:Key="/Default/Housekeeping/Bookmarks/NumberedBookmarks/=Bookmark8/FileId/@EntryValue">56BC7360-6F9F-448F-AA0A-CEA19955C08C/d:Controllers/f:PersonProfileController.cs</s:String>
+	<s:String x:Key="/Default/Housekeeping/Bookmarks/NumberedBookmarks/=Bookmark8/Owner/@EntryValue">NumberedBookmarkManager</s:String></wpf:ResourceDictionary>

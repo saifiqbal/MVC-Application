@@ -1,0 +1,13 @@
+c:\users\softnology\documents\visual studio 2012\Projects\Ceu-Education-MVC\Ceu-Education-MVC\bin\Ceu-Education-MVC.dll
+c:\users\softnology\documents\visual studio 2012\Projects\Ceu-Education-MVC\Ceu-Education-MVC\bin\Ceu-Education-MVC.pdb
+c:\users\softnology\documents\visual studio 2012\Projects\Ceu-Education-MVC\Ceu-Education-MVC\obj\Debug\Ceu-Education-MVC.dll
+c:\users\softnology\documents\visual studio 2012\Projects\Ceu-Education-MVC\Ceu-Education-MVC\obj\Debug\Ceu-Education-MVC.pdb
+C:\Users\softnology\Documents\Visual Studio 2012\Projects\Ceu-Education-MVC\Ceu-Education-MVC\bin\DAL.dll
+C:\Users\softnology\Documents\Visual Studio 2012\Projects\Ceu-Education-MVC\Ceu-Education-MVC\bin\DAL.pdb
+C:\Users\softnology\Documents\Visual Studio 2012\Projects\Ceu-Education-MVC\Ceu-Education-MVC\obj\Debug\Ceu-Education-MVC.csprojResolveAssemblyReference.cache
+C:\Users\softnology\documents\visual studio 2012\Projects\Ceu-Education-MVC\Ceu-Education-MVC\bin\AutoMapper.Net4.dll
+C:\Users\softnology\documents\visual studio 2012\Projects\Ceu-Education-MVC\Ceu-Education-MVC\bin\AutoMapper.dll
+C:\Users\softnology\documents\visual studio 2012\Projects\Ceu-Education-MVC\Ceu-Education-MVC\bin\AutoMapper.xml
+C:\Users\softnology\documents\visual studio 2012\Projects\Ceu-Education-MVC\Ceu-Education-MVC\bin\MvcCheckBoxList.dll
+H:\Practice_Projects\Ceu-Education-MVC\Ceu-Education-MVC\obj\Debug\Ceu-Education-MVC.csprojResolveAssemblyReference.cache
+D:\Practice_Projects\Ceu-Education-MVC\Ceu-Education-MVC\obj\Debug\Ceu-Education-MVC.csprojResolveAssemblyReference.cache

@@ -1,0 +1,248 @@
+﻿@model Ceu_Education_MVC.Models.SUDashBoard
+
+@{
+    string HeaderName = "";
+    string PersonName = "";
+    string EmailPersonal = "";
+    string Gender = "";
+    var LoginInfo = (System.Data.DataTable)Session["DTLogin"];
+    if(LoginInfo!=null)
+    {
+        HeaderName = LoginInfo.Rows[0]["OrganizationName"].ToString()+" - "+"DashBoard";
+        PersonName=LoginInfo.Rows[0]["FirstName"]+" "+LoginInfo.Rows[0]["MiddleName"]+" "+ LoginInfo.Rows[0]["LastName"];
+        EmailPersonal = LoginInfo.Rows[0]["EmailPersonal"].ToString();
+        Gender = LoginInfo.Rows[0]["Gender"].ToString();
+    }
+}
+
+<div>
+    <div style="width: auto; margin-left: 20px; margin-top: 5px">
+        <table>
+            <tr>
+                <td>
+
+                    <img style="height: 150px; width: 150px" src="../Content/Images/noprofilepic.jpg" />
+
+                </td>
+                <td style="width: auto">
+                    <table style="margin-bottom: 80px">
+                        <tr>
+                            <td style="text-align: left" class="auto-style2">
+                                 <label style="color: white; font-size: x-large">@PersonName</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left">
+                                <label style="color: white; font-size:small">EmailAddress</label>
+                            </td>
+
+
+                            <td style="text-align: left">
+                                <label style="color: white; font-size: small">@EmailPersonal</label>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td style="text-align: left">
+                               
+                                  <label style="color: white; font-size: small">Gender</label>
+                             </td>
+
+                            <td style="text-align: left">
+                                  <label style="color: white; font-size: small">@Gender</label>
+                            </td>
+                        </tr>
+
+                    </table>
+
+
+                </td>
+            </tr>
+
+
+
+        </table>
+
+
+
+    </div>
+
+    <div class="DashboardDiv" style="width: 950px; height: 300px; margin-left: 20px">
+        <table>
+            <tr>
+                <td style="width: 200px; height: 90px" class="imgbutton">
+
+
+                    <a href="@Url.Action("", "")">
+                        <img src="../Content/Images/profile.png" style="padding-left:40px; height:46px;width:auto" />
+                    </a></br>
+                      <label style="color: white; font-size: small;padding-left:30px">My Profile</label>
+                </td>
+
+                <td style="width: 200px; height: 90px" class="imgbutton">
+
+
+
+                    <a href="@Url.Action("", "")">
+                        <img src="../Content/Images/MyCourses.png"  style="padding-left:40px; height:46px;width:auto" />
+                    </a></br>
+                      <label style="color: white; font-size: small;padding-left:10px">My Presentations</label>
+                </td>
+
+                <td style="width: 200px; height: 90px" class="imgbutton">
+
+
+
+                    <a href="@Url.Action("", "")">
+                        <img src="../Content/Images/MyCourses.png" style="padding-left:40px" Height="44px" Width="38px" />
+                    </a></br>
+                      <label style="color: white; font-size: small;padding-left:23px">My Courses</label>
+
+                </td>
+
+                <td style="width: 200px; height: 90px" class="imgbutton">
+
+
+
+                    <a href="@Url.Action("", "")">
+                        <img src="../Content/Images/MyCourses.png"  style="padding-left:40px"  />
+                    </a></br>
+                      <label style="color: white; font-size: small;padding-left:20px">My Accounts</label>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td style="width: 200px; height: 90px" class="imgbutton">
+
+
+                    <a href="@Url.Action("", "")">
+                        <img src="../Content/Images/profile.png" style="padding-left:40px" />
+                    </a></br>
+                      <label style="color: white; font-size: small; padding-left:30px">My Users</label>
+                </td>
+
+                <td style="width: 200px; height: 90px" class="imgbutton">
+
+
+
+                    <a href="@Url.Action("", "")">
+                        <img src="../Content/Images/MyCourses.png" style="padding-left:40px" />
+                    </a></br>
+                      <label style="color: white; font-size: small;padding-left:19px">My Presenters</label>
+
+                </td>
+
+                <td style="width: 200px; height: 90px" class="imgbutton">
+
+
+                    <a href="@Url.Action("", "")">
+                        <img src="../Content/Images/CreateCourses.png"  style="padding-left:40px" />
+                    </a></br>
+                      <label style="color: white; font-size: small;padding-left:20px">Create Course</label>
+
+                </td>
+
+                <td style="width: 200px; height: 90px" class="imgbutton">
+
+
+
+
+                    <a href="@Url.Action("", "")">
+                        <img src="../Content/Images/createconference.png" style="padding-left:40px" />
+                    </a></br>
+                      <label style="color: white; font-size: small;padding-left:10px">Create Conference</label>
+
+                </td>
+
+
+                <td style="width: 200px; height: 90px" class="imgbutton">
+
+
+                    <a href="@Url.Action("", "")">
+                        <img src="../Content/Images/profile.png " style="padding-left:40px" />
+                    </a></br>
+                      <label style="color: white; font-size: small;padding-left:10px">Add/Edit Survey</label>
+
+                </td>
+
+
+
+
+
+            </tr>
+
+
+
+            <tr>
+                <td style="width: 200px; height: 90px" class="imgbutton">
+
+
+
+                    <a href="@Url.Action("PersonList","PersonList")">
+                        <img src="../Content/Images/profile.png" style="padding-left:40px" />
+                    </a></br>
+                      <label style="color: white; font-size: small;padding-left:28px; left: 27px;">All Person</label>
+                </td>
+
+                <td style="width: 200px; height: 90px" class="imgbutton">
+
+
+                    <a href="@Url.Action("", "")">
+                        <img src="../Content/Images/profile.png" style="padding-left:60px" />
+                    </a></br>
+                      <label style="color: white; font-size: small;padding-left:2px">Merge And Delete Persons</label>
+
+                </td>
+
+                <td style="width: 200px; height: 90px" class="imgbutton">
+
+
+                    <a href="@Url.Action("", "")">
+                        <img src="../Content/Images/MyCourses.png" style="padding-left:60px" />
+                    </a></br>
+                      <label style="color: white; font-size: small;padding-left:28px">Bulk Registration</label>
+                </td>
+
+                <td style="width: 200px; height: 90px" class="imgbutton">
+
+
+
+                    <a href="@Url.Action("EnterpriseList", "EnterpriseList")">
+                        <img src="../Content/Images/ViewEnterprise.png" style="padding-left:60px" />
+                    </a></br>
+                      <label style="color: white; font-size: small;padding-left:28px">View Organizations</label>
+
+                </td>
+
+                <td style="width: 200px; height: 90px" class="imgbutton">
+
+                    <a href="@Url.Action("", "")">
+                        <img src="../Content/Images/enterprise.png" style="padding-left:60px" />
+                    </a></br>
+                      <label style="color: white; font-size: small;padding-left:28px">Create Organization</label>
+
+                </td>
+
+                <td style="width: 200px; height: 90px" class="imgbutton">
+
+                    <a href="@Url.Action("", "")">
+                        <img src="../Content/Images/profile.png" style="padding-left:60px" />
+                    </a></br>
+                      <label style="color: white; font-size: small;padding-left:40px">File Uploader</label>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+@section OrganizationName
+{
+    <label style="color:white; font-size:large">@HeaderName</label>
+}
+    <style type="text/css">
+        .auto-style2 {
+            height: 31px;
+        }
+    </style>

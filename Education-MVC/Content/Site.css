@@ -1,0 +1,309 @@
+﻿        .auto-style1 {
+            height: 162px;
+            width: 126px;
+        }
+   
+        .MainArea {
+            margin-left: 0px;
+            margin-top: 8px;
+            height: 45px;
+            width: 184px;
+        }
+
+
+       .imgbutton:hover
+       {
+            transform: translateY(-6px);
+            animation-name: hover;
+            animation-duration: 1.5s;
+            animation-delay: 0.4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            transition-duration: 0.4s;
+       }
+        .LogintextBox 
+        {
+            border: 1px solid #999; 
+            outline:0; 
+            height:30px; 
+            width: 275px; 
+        }
+
+        .CaptchaClass 
+        {
+            border: 1px solid #999; 
+            outline:0; 
+            height:30px; 
+            width: 200px; 
+           
+        }
+.DashboardDiv 
+{
+ margin:10px;
+	padding:0;
+	width:100px;
+	height:100px;
+	border:1px solid rgba(0,0,0,0.5);
+	border-radius:10px 10px 2px 2px;
+	-webkit-box-shadow:
+		0 2px 6px rgba(0,0,0,0.5),
+		inset 0 1px rgba(255,255,255,0.3),
+		inset 0 10px rgba(255,255,255,0.2),
+		inset 0 10px 20px rgba(255,255,255,0.25),
+		inset 0 -15px 30px rgba(0,0,0,0.3);
+	-moz-box-shadow:
+		0 2px 6px rgba(0,0,0,0.5),
+		inset 0 1px rgba(255,255,255,0.3),
+		inset 0 10px rgba(255,255,255,0.2),
+		inset 0 10px 20px rgba(255,255,255,0.25),
+		inset 0 -15px 30px rgba(0,0,0,0.3);
+	box-shadow:
+		0 2px 6px rgba(0,0,0,0.5),
+		inset 0 1px rgba(255,255,255,0.3),
+		inset 0 10px rgba(255,255,255,0.2),
+		inset 0 10px 20px rgba(255,255,255,0.25),
+		inset 0 -15px 30px rgba(0,0,0,0.3);
+	background:rgba(0,0,0,0);
+border-radius: 10px;
+	
+
+}
+
+
+
+
+/*Boot Strap table css*/
+
+
+.muffin.table {
+    border-bottom: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+}
+.muffin.table tbody tr.success td {
+    background-color: #83f87e;
+}
+.muffin.table tbody tr.error td {
+    background-color: #f87e7e;
+}
+.muffin.table tbody tr.warning td {
+    background-color: #f8f57e;
+}
+.muffin.table tbody tr.info td {
+    background-color: #7ec4f8;
+}
+.muffin.table-hover tbody tr.success:hover td {
+    background-color: #5af654;
+}
+.muffin.table-hover tbody tr.error:hover td {
+    background-color: #f65454;
+}
+.muffin.table-hover tbody tr.warning:hover td {
+    background-color: #f6f254;
+}
+.muffin.table-hover tbody tr.info:hover td {
+    background-color: #54b0f6;
+}
+.muffin.table-bordered {
+    border-radius: 0;
+    border-right: 1px dashed #dddddd;
+}
+.muffin.table-bordered th, .muffin.table-bordered td {
+    border-left: 1px dashed #dddddd;
+}
+.muffin.table th {
+    background-color: #f0f0f0;
+    font-weight: 300;
+}
+.muffin.table th > a {
+    color: #444444;
+}
+.muffin.table-condensed {
+    font-size: small;
+}
+tr.lighter {
+    background-color: white;
+}
+tr.darker {
+    background-color: #f9f9f9;
+}
+textarea.minih {
+    line-height: 14px;
+    margin-bottom: 0;
+}
+input.minih[type="text"] {
+    height: 14px;
+    line-height: 14px;
+    margin-bottom: 0;
+}
+select.minih {
+    height: 22px;
+    line-height: 14px;
+    margin-bottom: 0;
+}
+select.minih[multiple="multiple"] {
+    height: auto;
+}
+select.minih option {
+    height: 14px;
+    line-height: 14px;
+    margin-bottom: 0;
+}
+.form-nomargin {
+    display: inline;
+}
+table.layout {
+    width: 100%;
+}
+table.layout > tbody > tr > td, table.layout-condensed > tbody > tr > td {
+    padding: 0;
+}
+.r1 {
+    width: 100%;
+}
+.r2 {
+    width: 50%;
+}
+.r3 {
+    width: 33%;
+}
+.r4 {
+    width: 25%;
+}
+.r5 {
+    width: 20%;
+}
+.r6 {
+    width: 16.7%;
+}
+.ramax {
+    width: 95%;
+}
+.table-head, .table-foot {
+    padding: 10px;
+}
+.muffin.table-head, .muffin.table-foot {
+    background-color: #f5f5f5;
+    background-image: url("../design/tableh2.png");
+}
+.table-search {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.muffin.table-search {
+    border-bottom: 1px solid #dddddd;
+}
+.table-results {
+    background-color: #dddddd;
+    background-image: url("../design/tableh2.png");
+    border-top: 1px dashed #dddddd;
+    margin-top: 2px;
+    padding: 10px;
+}
+.table-search-opt {
+    margin-bottom: 0;
+    padding: 0;
+}
+.label-90 {
+    text-align: center;
+    width: 90px;
+}
+.muffin.label-info, .muffin.badge-info {
+    background-color: #54b0f6;
+}
+.muffin.label-success, .muffin.badge-success {
+    background-color: #5af654;
+}
+.muffin.label-warning, .muffin.badge-warning {
+    background-color: #f6ba54;
+}
+.muffin.label-important, .muffin.badge-important {
+    background-color: #f65454;
+}
+.muffin.label {
+    border-radius: 0;
+    text-shadow: none;
+}
+.ibox-hero {
+    background-color: #f8f8f8;
+    background-image: url("../design/tableh2.png");
+    border: 1px solid white;
+    box-shadow: 0 0 3px 0 #cccccc inset;
+    margin: 1px;
+    padding: 1px;
+}
+.icon-rpos {
+    margin-right: 4px;
+    margin-top: 3px;
+}
+.margin-left {
+    margin-left: 10px;
+}
+.margin-bottom0 {
+    margin-bottom: 0;
+}
+.margin-right {
+    margin-right: 10px;
+}
+.padding-10 {
+    padding: 10px;
+}
+i.muffin {
+    opacity: 0.75;
+}
+.tra {
+    opacity: 0.5;
+}
+.muffin.alert {
+    background-color: #f8f57e;
+    background-image: url("../design/alert.png");
+    border-bottom: 1px dotted #d2d2d2;
+    border-radius: 0;
+    color: #444444;
+    margin-bottom: 0;
+}
+.muffin.alert-success {
+    background-color: #83f87e;
+    background-image: url("../design/alert-success.png");
+}
+.muffin.alert-error {
+    background-color: #f87e7e;
+    background-image: url("../design/alert-error.png");
+}
+.muffin.alert-info {
+    background-color: #7ec4f8;
+    background-image: url("../design/alert-info.png");
+}
+.muffin.alert-header {
+    border-left: 1px dotted #d2d2d2;
+    border-right: 1px dotted #d2d2d2;
+    border-top: 1px dotted #d2d2d2;
+    margin-bottom: 22px;
+}
+.muffin.table-bordered thead:first-child tr:first-child th:first-child, .muffin.table-bordered tbody:first-child tr:first-child td:first-child {
+    border-top-left-radius: 0;
+}
+.muffin.table-bordered thead:first-child tr:first-child th:last-child, .muffin.table-bordered tbody:first-child tr:first-child td:last-child {
+    border-top-right-radius: 0;
+}
+.muffin.table-bordered thead:last-child tr:last-child th:first-child, .muffin.table-bordered tbody:last-child tr:last-child td:first-child, .muffin.table-bordered tfoot:last-child tr:last-child td:first-child {
+    border-radius: 0;
+}
+.muffin.table-bordered thead:last-child tr:last-child th:last-child, .muffin.table-bordered tbody:last-child tr:last-child td:last-child, .muffin.table-bordered tfoot:last-child tr:last-child td:last-child {
+    border-bottom-right-radius: 0;
+}
+.muffin.table-bordered caption + thead tr:first-child th:first-child, .muffin.table-bordered caption + tbody tr:first-child td:first-child, .muffin.table-bordered colgroup + thead tr:first-child th:first-child, .muffin.table-bordered colgroup + tbody tr:first-child td:first-child {
+    border-top-left-radius: 0;
+}
+.muffin.table-bordered caption + thead tr:first-child th:last-child, .muffin.table-bordered caption + tbody tr:first-child td:last-child, .muffin.table-bordered colgroup + thead tr:first-child th:last-child, .muffin.table-bordered colgroup + tbody tr:first-child td:last-child {
+    border-top-right-radius: 0;
+}
+/*End table css*/
+
+
+
+
+
+
+           
+        
